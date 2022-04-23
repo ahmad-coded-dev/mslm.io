@@ -1,0 +1,116 @@
+.header_logo {
+    text-align: center;
+    height: 100.5px;
+    background-color: white;
+    img {
+        width: 161.1px;
+        height: 55.4px;
+        margin-top: 22.5px;
+    }
+}
+.mob_navbar_bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 110px;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    display: none;
+}
+.navbar {
+    z-index: 1;
+    height: 68px;
+    width: 100%;
+    background-color: #e0e0e0;
+    position: absolute;
+    div {
+        width: 472px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        a {
+            color: black;
+            line-height: 68px;
+            div {
+                width: 9px;
+                height: 5px;
+                background-color: black;
+                margin-top: -3px;
+            }
+            &.active_page {
+                font-weight: bold;
+            }
+        }
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+}
+@media screen and (min-width: 901px) {
+    .navbar {
+        img {
+            display: none;
+        }
+    }
+    .navbar_links {
+        hr {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .navbar {
+        text-align: center;
+        img {
+            &.hamburger {
+                width: 30px;
+                left: 20px;
+                position: absolute;
+                top: 19.5px;
+            }
+            &.navbar_logo {
+                height: 50px;
+                width: 161.5;
+                margin-top: 9px;
+                display: none;
+            }
+        }
+        div {
+            background-color: #e0e0e0;
+            height: 100vh;
+            width: 75%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding-top: 100px;
+            transform: translateX(-100%);
+            transition: all 0.3s;
+            text-align: start;
+            a {
+                font-size: 16px;
+                margin-left: 50px;
+                div {
+                    display: none;
+                }
+            }
+            img {
+                position: absolute;
+                top: 35px;
+                right: 35px;
+                width: 30px;
+                height: 30px;
+            }
+            &.show_navbar {
+                transform: translate(0%);
+                box-shadow: 0 20px 20px rgba($color: #000000, $alpha: 1);
+            }
+        }
+        hr {
+            width: 80px;
+            margin-left: 50px;
+        }
+    }
+}

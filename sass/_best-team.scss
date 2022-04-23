@@ -1,0 +1,346 @@
+@media screen and (min-width: 1201px) {
+    div {
+        &.best-team {
+            width: 1134px;
+            height: 600px;
+            margin: 161px auto 0;
+            display: flex;
+            flex-direction: column;
+            div {
+                &.best-team-intro {
+                    height: 186px;
+                    text-align: center;
+                    h2 {
+                        font-size: 48px;
+                        font-weight: bold;
+                        line-height: 1.25;
+                        text-align: center;
+                        color: #010101;
+                    }
+                    p {
+                        margin: 32px 88px 0 88px;
+                        font-size: 18px;
+                        line-height: 2.06;
+                        color: #666;
+                    }
+                }
+                &.best-team-card {
+                    height: 496px;
+                    display: flex;
+                    justify-content: space-between;
+                    button {
+                        display: block;
+                        width: 48px;
+                        height: 48px;
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                        margin-top: 227px;
+                        &.first {
+                            visibility: hidden;
+                        }
+                    }
+                    div {
+                        &.window {
+                            height: 496px;
+                            width: 934px;
+                            overflow: hidden;
+                            div {
+                                &.slider {
+                                    display: inline-flex;
+                                    div {
+                                        &.member_card {
+                                            width: 276px;
+                                            height: 399px;
+                                            margin: 0 16px;
+                                            margin-top: 68px;
+                                            text-align: center;
+                                            border: 1px solid #e0e0e0;
+                                            border-radius: 15px;
+                                            background-color: #fefefe;
+                                            box-shadow: 0 5px 13px 0
+                                                rgba(111, 109, 113, 0.13);
+                                            transition: all 0.2s ease-in-out;
+                                            text-align: center;
+                                            img {
+                                                width: 184px;
+                                                height: 184px;
+                                                transition: all 0.2s ease-in-out;
+                                                margin-top: 51px;
+                                                border-radius: 100%;
+                                            }
+                                            p {
+                                                font-size: 24px;
+                                                margin-top: 36px;
+                                                font-weight: bolder;
+                                            }
+                                            span {
+                                                color: #666;
+                                                display: block;
+                                                margin-top: 0px;
+                                                transition: all 0.2s ease-in-out;
+                                            }
+                                            a {
+                                                display: none;
+                                                margin-top: -20px;
+                                                transition: all 0.2s ease-in-out;
+                                            }
+                                            &:hover {
+                                                margin-top: 0;
+                                                margin: 0;
+                                                background-color: #666;
+                                                width: 310px;
+                                                height: 496px;
+                                                color: #fff;
+                                                img {
+                                                    width: 256px;
+                                                    height: 256px;
+                                                    &.link {
+                                                        border-radius: 0;
+                                                        width: 16px;
+                                                        height: 16.1px;
+                                                    }
+                                                }
+                                                span {
+                                                    color: #fff;
+                                                }
+                                                a {
+                                                    display: inline-block;
+                                                    width: 16px;
+                                                    height: 16.1px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    div {
+        &.best-team {
+            width: 100%;
+            height: 510px;
+            margin: 79px auto 0;
+            display: flex;
+            flex-direction: column;
+            div {
+                &.best-team-intro {
+                    width: 50%;
+                    height: 69px;
+                    margin: 0 auto;
+                    text-align: center;
+                    h2 {
+                        font-size: 48px;
+                        font-weight: bold;
+                        line-height: 1.25;
+                        text-align: center;
+                        color: #010101;
+                    }
+                }
+                &.best-team-card {
+                    height: 399px;
+                    margin-top: 51px;
+                    display: flex;
+                    justify-content: space-between;
+                    button {
+                        display: none;
+                        width: 48px;
+                        height: 48px;
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                        margin-top: 227px;
+                        &.first {
+                            visibility: visible;
+                        }
+                    }
+                    div {
+                        &.window {
+                            position: relative;
+                            width: 100%;
+                            height: 399px;
+                            margin-top: 50px;
+                            overflow: hidden;
+                            padding-bottom: 10px;
+                            div {
+                                &.slider {
+                                    position: relative;
+                                    top: 0;
+                                    left: -270px;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: grid;
+                                    grid-template-columns: repeat(
+                                        10,
+                                        1fr
+                                    ); /*we have 10 imgs so repeat 10 times 1 fr*/
+                                    column-gap: 1rem;
+                                    pointer-events: none;
+                                    div {
+                                        &.member_card {
+                                            width: 310px;
+                                            height: 100%;
+                                            text-align: center;
+                                            border: 1px solid #e0e0e0;
+                                            border-radius: 15px;
+                                            background-color: #fefefe;
+                                            transition: all 0.2s ease-in-out;
+                                            box-shadow: 0 5px 13px 0
+                                                rgba(111, 109, 113, 0.13);
+                                            img {
+                                                width: 184px;
+                                                height: 184px;
+                                                transition: all 0.2s ease-in-out;
+                                                margin-top: 33px;
+                                                border-radius: 100%;
+                                                &.link {
+                                                    border-radius: 0;
+                                                    width: 16px;
+                                                    height: 16.1px;
+                                                    filter: invert(70%);
+                                                }
+                                            }
+                                            p {
+                                                font-size: 24px;
+                                                margin-top: 56px;
+                                                font-weight: bolder;
+                                            }
+                                            span {
+                                                color: #666;
+                                                display: block;
+                                                margin-top: 0px;
+                                                transition: all 0.2s ease-in-out;
+                                            }
+                                            a {
+                                                display: inline-block;
+                                                margin-top: -10px;
+                                                transition: all 0.2s ease-in-out;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    div {
+        &.best-team {
+            width: 100%;
+            height: 501px;
+            margin: 79px auto 0;
+            display: flex;
+            flex-direction: column;
+            div {
+                &.best-team-intro {
+                    width: 320px;
+                    height: 69px;
+                    margin: 0 auto;
+                    text-align: center;
+                    h2 {
+                        font-size: 35px;
+                        font-weight: bold;
+                        line-height: 1.25;
+                        text-align: center;
+                        color: #010101;
+                    }
+                }
+                &.best-team-card {
+                    height: 399px;
+                    margin-top: 51px;
+                    display: flex;
+                    justify-content: space-between;
+                    button {
+                        display: none;
+                        width: 48px;
+                        height: 48px;
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                        margin-top: 227px;
+                        &.first {
+                            visibility: visible;
+                        }
+                    }
+                    div {
+                        &.window {
+                            position: relative;
+                            width: 100%;
+                            height: 399px;
+                            overflow: hidden;
+                            padding-bottom: 10px;
+                            div {
+                                &.slider {
+                                    position: relative;
+                                    top: 0;
+                                    left: -270px;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: grid;
+                                    grid-template-columns: repeat(
+                                        10,
+                                        1fr
+                                    ); /*we have 10 imgs so repeat 10 times 1 fr*/
+                                    column-gap: 1rem;
+                                    pointer-events: none;
+                                    div {
+                                        &.member_card {
+                                            width: 310px;
+                                            height: 100%;
+                                            text-align: center;
+                                            border: 1px solid #e0e0e0;
+                                            border-radius: 15px;
+                                            background-color: #fefefe;
+                                            transition: all 0.2s ease-in-out;
+                                            box-shadow: 0 5px 13px 0
+                                                rgba(111, 109, 113, 0.13);
+                                            img {
+                                                width: 184px;
+                                                height: 184px;
+                                                transition: all 0.2s ease-in-out;
+                                                margin-top: 33px;
+                                                border-radius: 100%;
+                                                &.link {
+                                                    border-radius: 0;
+                                                    width: 16px;
+                                                    height: 16.1px;
+                                                    filter: invert(70%);
+                                                }
+                                            }
+                                            p {
+                                                font-size: 24px;
+                                                margin-top: 56px;
+                                                font-weight: bolder;
+                                            }
+                                            span {
+                                                color: #666;
+                                                display: block;
+                                                margin-top: 0px;
+                                                transition: all 0.2s ease-in-out;
+                                            }
+                                            a {
+                                                display: inline-block;
+                                                margin-top: -10px;
+                                                transition: all 0.2s ease-in-out;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

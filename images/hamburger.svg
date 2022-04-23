@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <g data-name="Group 261">
+        <path data-name="Line 1" d="M18.091 1H-.091A.958.958 0 0 1-1 0a.958.958 0 0 1 .909-1h18.182A.958.958 0 0 1 19 0a.958.958 0 0 1-.909 1z" transform="translate(1 1)" style="fill:#707070"/>
+        <path data-name="Line 2" d="M18.091 1H-.091A.958.958 0 0 1-1 0a.958.958 0 0 1 .909-1h18.182A.958.958 0 0 1 19 0a.958.958 0 0 1-.909 1z" transform="translate(1 10)" style="fill:#707070"/>
+        <path data-name="Line 3" d="M18.091 1H-.091A.958.958 0 0 1-1 0a.958.958 0 0 1 .909-1h18.182A.958.958 0 0 1 19 0a.958.958 0 0 1-.909 1z" transform="translate(1 19)" style="fill:#707070"/>
+    </g>
+</svg>

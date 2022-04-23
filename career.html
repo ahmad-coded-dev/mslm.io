@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Career</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Poppins:wght@400;500;600;700&family=The+Nautigal:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="icon" href="./images/favicon.ico" />
+        <link rel="stylesheet" href="./sass/index.scss" />
+    </head>
+    <body>
+        <div class="mob_navbar_bg"></div>
+
+        <div class="header_logo">
+            <a href="./index.html"><img src="./images/Logo.svg" /></a>
+        </div>
+
+        <div class="navbar">
+            <img class="hamburger" src="./images/hamburger.svg" />
+            <a href="./index.html"
+                ><img class="navbar_logo" src="./images/Logo.svg"
+            /></a>
+            <div class="navbar_links">
+                <a href="./index.html">Home</a>
+                <hr />
+                <a href="./about.html">About us</a>
+                <hr />
+                <a class="active_page" href="./career.html"
+                    >Career
+                    <div></div
+                ></a>
+                <hr />
+                <a href="./contactus.html">Contact us</a>
+                <img src="./images/xmark-solid.svg" />
+            </div>
+        </div>
+
+        <div class="page_description">
+            <h1>Open Positions</h1>
+            <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum
+            </p>
+        </div>
+
+        <div class="jobs_title">
+            <button
+                class="job_title btn"
+                onclick="active_btn(this) ; all_section()"
+            >
+                All
+            </button>
+            <button
+                class="job_title"
+                onclick="active_btn(this);selected_section('developer')"
+            >
+                Developer
+            </button>
+            <button
+                for="engineer"
+                ;
+                class="job_title"
+                onclick="active_btn(this);selected_section('engineer')"
+            >
+                Engineer
+            </button>
+            <button
+                class="job_title"
+                onclick="active_btn(this);selected_section('designer')"
+            >
+                Designer
+            </button>
+            <button
+                class="job_title"
+                onclick="active_btn(this);selected_section('researcher')"
+            >
+                Researcher
+            </button>
+            <button
+                class="job_title"
+                onclick="active_btn(this);selected_section('marketing')"
+            >
+                Marketing
+            </button>
+        </div>
+
+        <select
+            class="jobs_dropdown_menu"
+            id="mslm_jobs"
+            onchange="GetSelectedTextValue(this)"
+        >
+            <option value="all">All</option>
+            <option value="developer">Developer</option>
+            <option value="engineer">Engineer</option>
+            <option value="designer">Designer</option>
+            <option value="researcher">Researcher</option>
+            <option value="marketing">Marketing</option>
+        </select>
+
+        <div class="developer section">
+            <div class="job">
+                <button onclick="show_job_desc(this)">
+                    <img />
+                    <h2>Developer</h2>
+                    <p>Lahore - Pakistan</p>
+                </button>
+                <div>
+                    <h3>Job Description & Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Benifits</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <button onclick="showModal()" class="job-apply-button">
+                        Apply Now
+                    </button>
+                </div>
+
+                <hr />
+            </div>
+
+            <div class="job">
+                <button onclick="show_job_desc(this)">
+                    <img />
+                    <h2>IOS Developer</h2>
+                    <p>Lahore - Pakistan</p>
+                </button>
+                <div>
+                    <h3>Job Description & Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Benifits</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <button onclick="showModal()">Apply Now</button>
+                </div>
+
+                <hr />
+            </div>
+
+            <div class="job">
+                <button onclick="show_job_desc(this)">
+                    <img />
+                    <h2>Backend Developer</h2>
+                    <p>Lahore - Pakistan</p>
+                </button>
+                <div>
+                    <h3>Job Description & Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Benifits</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <button onclick="showModal()">Apply Now</button>
+                </div>
+
+                <hr />
+            </div>
+
+            <div class="job">
+                <button onclick="show_job_desc(this)">
+                    <img />
+                    <h2>Project</h2>
+                    <p>Lahore - Pakistan</p>
+                </button>
+                <div>
+                    <h3>Job Description & Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Benifits</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <button onclick="showModal()">Apply Now</button>
+                </div>
+
+                <hr />
+            </div>
+
+            <div class="job">
+                <button onclick="show_job_desc(this)">
+                    <img />
+                    <h2>Marketing</h2>
+                    <p>Lahore - Pakistan</p>
+                </button>
+                <div>
+                    <h3>Job Description & Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Benifits</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <button onclick="showModal()">Apply Now</button>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+
+        <div class="engineer section">
+            <div class="job">
+                <button onclick="show_job_desc(this)">
+                    <img />
+                    <h2>Engineer</h2>
+                    <p>Lahore - Pakistan</p>
+                </button>
+                <div>
+                    <h3>Job Description & Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Benifits</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <button onclick="showModal()" class="job-apply-button">
+                        Apply Now
+                    </button>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+
+        <div class="designer section">
+            <div class="job">
+                <button onclick="show_job_desc(this)">
+                    <img />
+                    <h2>Designer</h2>
+                    <p>Lahore - Pakistan</p>
+                </button>
+                <div>
+                    <h3>Job Description & Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Benifits</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <button onclick="showModal()" class="job-apply-button">
+                        Apply Now
+                    </button>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+
+        <div class="researcher section">
+            <div class="job">
+                <button onclick="show_job_desc(this)">
+                    <img />
+                    <h2>Researcher</h2>
+                    <p>Lahore - Pakistan</p>
+                </button>
+                <div>
+                    <h3>Job Description & Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Benifits</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <button onclick="showModal()" class="job-apply-button">
+                        Apply Now
+                    </button>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+
+        <div class="marketing section">
+            <div class="job">
+                <button onclick="show_job_desc(this)">
+                    <img />
+                    <h2>Marketing</h2>
+                    <p>Lahore - Pakistan</p>
+                </button>
+                <div>
+                    <h3>Job Description & Responsibilities:</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <h3>Benifits</h3>
+                    <ul>
+                        <li>
+                            Development & Conversion from android to iOS
+                            platform.
+                        </li>
+                        <li>
+                            Good grip on both iOS and android platforms in game
+                            development..
+                        </li>
+                        <li>Sound knowledge of iOS developer policies.</li>
+                        <li>
+                            Awareness of SOPs that are required to publish games
+                            on iOS from development side.
+                        </li>
+                        <li>Good grip on XCODE.</li>
+                        <li>Building & uploading IPAs on App Store.</li>
+                        <li>
+                            Integration of different SDKs for monetization &
+                            analytics.
+                        </li>
+                    </ul>
+                    <button onclick="showModal()" class="job-apply-button">
+                        Apply Now
+                    </button>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+
+        <div class="modal">
+            <div>
+                <img src="./images/Group 254.svg" />
+                <h2>Thank you for your interest!</h2>
+                <p>For applying email at <strong>jobs@mslm.io</strong></p>
+                <span
+                    >your resume and other details should be attached on
+                    email.</span
+                >
+            </div>
+        </div>
+
+        <the-footer></the-footer>
+
+        <script src="./js/career.js"></script>
+        <script src="./js/nav.js"></script>
+        <script type="module" src="./js/components.js"></script>
+    </body>
+</html>

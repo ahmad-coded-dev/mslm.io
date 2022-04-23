@@ -1,0 +1,202 @@
+form {
+    width: 1179px;
+    margin: 125px auto 0;
+    div {
+        display: inline-block;
+        border-bottom: 1px solid #666;
+        position: relative;
+        img {
+            filter: invert(50%);
+            margin-right: 10px;
+        }
+        input {
+            width: 464px;
+            height: 54px;
+            border: none;
+            outline: none;
+            padding-left: 14.1px;
+            font-size: 22px;
+            margin-bottom: 7px;
+            background: none;
+        }
+        span {
+            position: absolute;
+            right: 0;
+            top: 5px;
+        }
+        &.activeState {
+            border-bottom: 3px solid black;
+            img {
+                filter: invert(0);
+            }
+        }
+    }
+    textarea {
+        width: 92%;
+        height: 264px;
+        padding: 40px 4% 0;
+        font-size: 22px;
+        margin-top: 89.5px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        outline: none;
+        resize: none;
+        box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: 0.1);
+        resize: none;
+        &:focus {
+            box-shadow: 5px 5px 10px 0px rgba($color: #000000, $alpha: 0.1);
+        }
+    }
+    button {
+        width: 199px;
+        height: 68px;
+        margin: 50px 41.56% 0;
+        color: #f2f2f2;
+        background-color: #666;
+        border: none;
+        border-radius: 50px;
+        font-size: larger;
+        font-weight: bolder;
+        &:hover {
+            background-color: #000000;
+        }
+    }
+}
+.response_msg_section {
+    height: 65px;
+    width: 550px;
+    margin: 75px auto 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-size: 21px;
+    display: none;
+    img {
+        height: 25px;
+        width: 25px;
+        margin: 20px;
+    }
+    p {
+        position: absolute;
+        top: 16px;
+        left: 90px;
+    }
+}
+.message_submit_error {
+    background: rgba(225, 0, 0, 0.05);
+    border: 1px solid red;
+    p {
+        color: rgba(255, 0, 0, 0.7);
+    }
+    img {
+        filter: invert(28%) sepia(80%) saturate(7477%) hue-rotate(354deg)
+            brightness(96%) contrast(122%);
+    }
+}
+.message_submit {
+    width: 350px;
+    background: rgba(0, 225, 0, 0.05);
+    border: 1px solid green;
+    p {
+        color: rgba(0, 174, 0, 1);
+        left: 60px;
+        top: 18px;
+    }
+    img {
+        filter: invert(43%) sepia(59%) saturate(2448%) hue-rotate(87deg)
+            brightness(97%) contrast(104%);
+    }
+}
+@media screen and (min-width: 1201px) {
+    form {
+        div {
+            &:nth-child(2),
+            &:nth-child(4) {
+                float: right;
+            }
+            &:nth-child(1) {
+                margin-bottom: 90px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+    form {
+        width: 92%;
+        font-size: 18px;
+        div {
+            width: 45%;
+            input {
+                width: 80%;
+            }
+            &:nth-child(2),
+            &:nth-child(4) {
+                float: right;
+            }
+            &:nth-child(1) {
+                margin-bottom: 90px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 601px) {
+    form {
+        width: 92%;
+        text-align: center;
+        font-size: 16px;
+        div {
+            width: 100%;
+            margin-bottom: 50px;
+            input {
+                width: 87%;
+            }
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+        }
+        button {
+            margin: 50px 0 0;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    form {
+        width: 92%;
+        text-align: center;
+        font-size: 14px;
+        div {
+            width: 100%;
+            margin-bottom: 50px;
+            input {
+                width: 75%;
+            }
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+            img {
+                margin-left: -32px;
+            }
+        }
+        button {
+            margin: 50px 0 0;
+        }
+    }
+    .response_msg_section {
+        width: 82%;
+        p {
+            font-size: 14px;
+        }
+    }
+    .message_submit_error {
+        p {
+            left: 60px;
+            top: 22px;
+        }
+    }
+    .message_submit {
+        width: 300px;
+        p {
+            top: 22px;
+        }
+    }
+}

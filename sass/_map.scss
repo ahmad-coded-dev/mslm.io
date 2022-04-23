@@ -1,0 +1,10 @@
+.workmap {
+    width: 1179px;
+    margin: 191px auto 0;
+    box-shadow: 0 19px 66px 0 rgba(111, 109, 113, 0.13);
+}
+@media screen and (max-width: 1200px) {
+    .workmap {
+        width: 92%;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Poppins:wght@400;500;600;700&family=The+Nautigal:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="icon" href="./images/favicon.ico" />
+        <link rel="stylesheet" href="./sass/index.scss" />
+    </head>
+
+    <body>
+        <div class="mob_navbar_bg"></div>
+
+        <div class="header_logo">
+            <a href="./index.html"><img src="./images/Logo.svg" /></a>
+        </div>
+
+        <div class="navbar">
+            <img class="hamburger" src="./images/hamburger.svg" />
+            <a href="./index.html"
+                ><img class="navbar_logo" src="./images/Logo.svg"
+            /></a>
+            <div class="navbar_links">
+                <a href="./index.html">Home</a>
+                <hr />
+                <a href="./about.html">About us</a>
+                <hr />
+                <a href="./career.html">Career</a>
+                <hr />
+                <a class="active_page" href="./contactus.html"
+                    >Contact us
+                    <div></div
+                ></a>
+                <img src="./images/xmark-solid.svg" />
+            </div>
+        </div>
+
+        <div class="page_description">
+            <h1>Talk to our teams</h1>
+            <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum
+            </p>
+        </div>
+
+        <div class="response_msg_section">
+            <img src="./images/information.svg" />
+            <p class="response_msg"></p>
+        </div>
+
+        <form id="contact-form">
+            <div onclick="activeSection(this)">
+                <img src="./images/user.svg" />
+                <input
+                    onfocus="activeInput(this)"
+                    onblur="leaveInput(this)"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                />
+                <span>*</span>
+            </div>
+
+            <div onclick="activeSection(this)">
+                <img src="./images/mail.svg" />
+                <input
+                    onfocus="activeInput(this)"
+                    onblur="leaveInput(this)"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    type="email"
+                />
+                <span>*</span>
+            </div>
+
+            <div onclick="activeSection(this)">
+                <img src="./images/subject.svg" />
+                <input
+                    onfocus="activeInput(this)"
+                    onblur="leaveInput(this)"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                />
+                <span>*</span>
+            </div>
+
+            <div onclick="activeSection(this)">
+                <img src="./images/mobile.svg" />
+                <input
+                    onfocus="activeInput(this)"
+                    inputmode="numeric"
+                    oninput="chkInput(this)"
+                    onblur="leaveInput(this)"
+                    name="number"
+                    placeholder="Phone Number"
+                />
+            </div>
+
+            <textarea
+                name="message"
+                placeholder="Enter your message here"
+            ></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="workmap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.4297843413647!2d74.18647842878231!3d31.374710891722685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3918ff954ce9a029%3A0x2aa80c911055e3b8!2sJasmine%20Heights!5e0!3m2!1sen!2s!4v1642504279630!5m2!1sen!2s"
+                width="100%"
+                height="467"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+        </div>
+
+        <the-footer></the-footer>
+        <script src="./js/nav.js"></script>
+        <script src="./js/form.js"></script>
+        <script type="module" src="./js/components.js"></script>
+        <script type="module" src="./contactus.js"></script>
+    </body>
+</html>

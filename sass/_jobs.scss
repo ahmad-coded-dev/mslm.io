@@ -1,0 +1,198 @@
+.jobs_title {
+    width: 1179px;
+    height: 73.5px;
+    margin: 125px auto 30px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        width: 148px;
+        height: 73.5px;
+        color: #666;
+        background: none;
+        border: none;
+        font-size: 28px;
+        padding-bottom: 40px;
+        cursor: pointer;
+        scroll-margin-top: 75px;
+        &.btn {
+            border-bottom: 5px solid black;
+            color: black;
+            font-weight: bolder;
+        }
+    }
+}
+.section {
+    width: 91%;
+    margin: 0 auto;
+}
+.job {
+    scroll-margin-top: 68px;
+    button {
+        width: 100%;
+        height: 100px;
+        margin: 10px auto 0;
+        text-align: left;
+        background: none;
+        border: none;
+        img {
+            content: url('../images/ios-arrow-dropdown-circle.svg');
+            height: 28px;
+            width: 28px;
+            margin-top: 15px;
+            float: right;
+        }
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+            color: #707070;
+            margin-top: 10px;
+        }
+    }
+    div {
+        display: none;
+        ul {
+            margin-top: 16px;
+            li {
+                color: #707070;
+                margin-left: 20px;
+            }
+        }
+        h3 {
+            margin-top: 20px;
+        }
+        button {
+            height: 68px;
+            width: 199px;
+            background-color: #666;
+            color: #f2f2f2;
+            border: none;
+            text-align: center;
+            border-radius: 34px;
+            font-size: larger;
+            font-weight: bolder;
+            margin-top: 44px;
+            margin-bottom: 85.5px;
+            background-image: none;
+            &:hover {
+                background-color: #000;
+                color: #f2f2f2;
+            }
+        }
+    }
+    hr {
+        margin: 10px auto 30px;
+        width: 100%;
+        color: #cdcbcf;
+    }
+}
+.show_job_desc {
+    button {
+        img {
+            content: url('../images/low.svg');
+        }
+    }
+    div {
+        display: block;
+    }
+}
+select {
+    display: block;
+    width: 88.89%;
+    height: 50px;
+    margin: 20px 0 4% 5%;
+    padding-left: 15px;
+    font-size: 22px;
+    border-radius: 8px;
+    border: solid 1px #000;
+    background-color: #f8f8f8;
+    scroll-margin-top: 75px;
+    option {
+        line-height: 20px;
+        height: 20px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
+.jobs_title {
+    display: none;
+}
+@media only screen and (min-width: 1201px) {
+    .section {
+        width: 1179px;
+    }
+    .jobs_title {
+        display: flex;
+    }
+    select {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 901px) {
+    .jobs_title {
+        display: flex;
+        width: 95%;
+    }
+    .job {
+        button {
+            height: 100px;
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+    select {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+    .job {
+        button {
+            height: 71px;
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        div {
+            button {
+                width: 55.5%;
+                margin: 44px 21% 50px;
+                &:active {
+                    background-color: #000;
+                    color: #f2f2f2;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .job {
+        button {
+            height: 71px;
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        div {
+            button {
+                width: 55.5%;
+                margin: 44px 21% 40.5px;
+                &:active {
+                    background-color: #000;
+                    color: #f2f2f2;
+                }
+            }
+        }
+    }
+    select {
+        font-size: 18px;
+    }
+}

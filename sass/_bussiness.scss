@@ -1,0 +1,18 @@
+.bussiness_consult {
+    margin: 161px auto 0;
+    text-align: center;
+    font-size: 48px;
+}
+@media screen and (max-width: 1200px) and (min-width: 601px) {
+    .bussiness_consult {
+        width: 91%;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .bussiness_consult {
+        width: 91%;
+        border-radius: 20px;
+        font-size: 24px;
+    }
+}

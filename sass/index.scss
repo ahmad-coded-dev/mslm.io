@@ -1,0 +1,16 @@
+@import 'general'; //contains general information about all pages and background mask.
+@import 'header'; //contains top logo and navbar of all pages.
+@import 'toppart'; //contains introduction of conatct and career pages.
+@import 'world-class'; //contains world-class section of home page.
+@import 'product-card'; //contains products in card form of home and about us pages.
+@import 'about-part'; //contains about part of home page.
+@import 'official-lib'; //contains official libraries part of home page.
+@import 'best-team'; //contains best team cards part of home page.
+@import 'bussiness'; //contains bussiness consultation part of home page.
+@import 'about-description'; //contains about description part of about page.
+@import 'form'; //contains form part of contact us page.
+@import 'map'; //contain map part of contact us page.
+@import 'jobs'; //contains job part of career page.
+@import 'modal'; //contains the scss of modal (popup on apply now button in career page).
+@import 'lastpart'; //contains usefullinks and address on last of all pages.
+@import 'footer'; //contains footer of all pages.
